@@ -1,8 +1,71 @@
 layout: {zmk_keyboard: sofle_ergomech}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
-  lower:
+  Base:
+  - ESC
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '='
+  - TAB
+  - ''''
+  - ','
+  - .
+  - P
+  - Y
+  - F
+  - G
+  - C
+  - R
+  - L
+  - /
+  - LSHFT
+  - {t: A, h: LEFT WIN}
+  - {t: O, h: LEFT ALT}
+  - E
+  - U
+  - I
+  - D
+  - H
+  - T
+  - {t: N, h: LEFT ALT}
+  - {t: S, h: LWIN}
+  - '-'
+  - LCTRL
+  - ;
+  - Q
+  - J
+  - K
+  - X
+  - B
+  - M
+  - W
+  - V
+  - Z
+  - \
+  - MUTE
+  - LGUI
+  - '&flatten'
+  - LALT
+  - SPACE
+  - Nav
+  - Num
+  - ENTER
+  - BSPC
+  - LALT
+  - LGUI
+  - PLAY PAUSE
+  - NEXT
+  - UP ARROW
+  - PREV
+  - STOP
+  Num:
   - '&studio_unlock'
   - F1
   - F2
@@ -55,9 +118,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -67,7 +130,7 @@ layers:
   - C
   - D
   - E
-  raise:
+  Nav:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -121,9 +184,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -132,7 +195,7 @@ layers:
   - C
   - D
   - E
-  adjust:
+  Sym:
   - BT CLR
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -157,7 +220,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - RGB BRD
   - RGB BRI
   - ''
@@ -169,7 +232,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -185,10 +248,10 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
   - ''
-  - {type: held}
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -197,3 +260,42 @@ layers:
   - C
   - D
   - E
+combos:
+- p: [14, 15]
+  k: ESCAPE
+- p: [15, 16]
+  k: ENTER
+  l: [Base, Nav, Sym]
+- p: [15, 16]
+  k: '&numword ENTER'
+  l: [Num]
+- p: [16, 17]
+  k: BACKSPACE
+- p: [14, 26]
+  k: '&commaspace'
+- p: [24, 25]
+  k: Ctl+A
+- p: [25, 26]
+  k: Alt+O
+- p: [28, 40]
+  k: ENTER
+- p: [24, 36]
+  k: {t: Sym, h: sticky}
+- p: [36, 37]
+  k: Ctl+;
+- p: [38, 39]
+  k: Ctl+C
+- p: [40, 38]
+  k: Ctl+X
+- p: [40, 39]
+  k: Ctl+V
+- p: [5, 17]
+  k: '&msc SCRL_UP'
+- p: [29, 41]
+  k: '&msc SCRL_DOWN'
+- p: [40, 41]
+  k: DELETE
+- p: [12, 24, 36]
+  k: '&bootloader'
+- p: [23, 35, 47]
+  k: '&bootloader'
