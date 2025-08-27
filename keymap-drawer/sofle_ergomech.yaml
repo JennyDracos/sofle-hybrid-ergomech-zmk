@@ -60,65 +60,65 @@ layers:
   - BSPC
   - LALT
   - LGUI
-  - PLAY PAUSE
-  - NEXT
-  - UP ARROW
-  - PREV
-  - STOP
-  Num:
-  - '&studio_unlock'
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - '`'
-  - '1'
   - '2'
   - '3'
   - '4'
+  - '1'
   - '5'
-  - '6'
-  - '7'
-  - '8'
-  - '9'
-  - '0'
-  - F12
-  - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
+  Num:
+  - '&numword ESCAPE'
   - (
+  - KP 7
+  - KP 8
+  - KP 9
   - )
-  - '|'
-  - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - +
-  - '{'
-  - '}'
+  - '&numword N6'
+  - '&numword N7'
+  - '&numword N8'
+  - '&numword N9'
+  - '&numword N0'
+  - '&numword EQUAL'
+  - '&numword TAB'
   - '['
+  - KP 4
+  - KP 5
+  - KP 6
   - ']'
-  - ;
-  - ':'
+  - KP NUMLOCK
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - ''
+  - {t: ▽, type: trans}
+  - '`'
+  - KP 1
+  - KP 2
+  - KP 3
+  - '='
+  - CAPSLOCK
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - ''
+  - {t: ▽, type: trans}
+  - /
+  - KP MINUS
+  - KP 0
+  - KP DOT
   - \
+  - INS
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&numword SPACE'
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
@@ -131,54 +131,54 @@ layers:
   - D
   - E
   Nav:
-  - BT CLR
+  - {t: ▽, type: trans}
+  - F12
+  - F7
+  - F8
+  - F9
+  - F15
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
+  - BT CLR
   - {t: ▽, type: trans}
+  - F11
+  - F4
+  - F5
+  - F6
+  - F14
+  - KP NUMLOCK
+  - '&msc SCRL_LEFT'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_RIGHT'
+  - ''
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
-  - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
-  - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
+  - F10
+  - F1
+  - F2
+  - F3
+  - F13
+  - CAPS
   - LEFT
   - DOWN
+  - UP
   - RIGHT
-  - DEL
-  - BSPC
+  - ''
   - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - F1
+  - F10
+  - F12
+  - ''
+  - INS
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -196,24 +196,36 @@ layers:
   - D
   - E
   Sym:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - {t: ▽, type: trans}
+  - ''
+  - Sft+&
+  - Sft+*
+  - Sft+(
   - ''
   - ''
   - ''
+  - '&degree'
+  - ''
+  - ''
+  - '&plus_minus'
+  - {t: ▽, type: trans}
+  - Sft+[
+  - Sft+$
+  - Sft+%
+  - Sft+^
+  - Sft+]
+  - ''
+  - ''
+  - AL CALC
   - ''
   - ''
   - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
+  - {type: held}
+  - '~'
+  - Sft+!
+  - Sft+@
+  - Sft+#
+  - Sft++
   - ''
   - ''
   - ''
@@ -221,40 +233,28 @@ layers:
   - ''
   - ''
   - {type: held}
-  - RGB BRD
-  - RGB BRI
+  - Sft+?
+  - Sft+_
+  - Sft+)
+  - ''
+  - Sft+|
+  - ''
+  - '&micro'
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - A
   - B
   - C
